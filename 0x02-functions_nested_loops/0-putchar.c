@@ -1,4 +1,3 @@
-#include "holberton.h"
 /**
  * main - Print the word "_putchar"
  *

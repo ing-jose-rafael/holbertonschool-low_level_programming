@@ -2,7 +2,9 @@
 
 /**
  * main - tests function that prints if integer is positive or negative
- * Return: 0
+ * 
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 int main(void)

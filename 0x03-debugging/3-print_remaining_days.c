@@ -8,7 +8,8 @@
  * @day: day of month
  * @year: year
  * 
- * Return: void  On success 1.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 void print_remaining_days(int month, int day, int year)

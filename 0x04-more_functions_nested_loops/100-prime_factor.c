@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-long i, numbre = 1231952;
+long i, numbre = 612852475143;
 
 for (i = 2; i < sqrt(numbre); i++)
 {

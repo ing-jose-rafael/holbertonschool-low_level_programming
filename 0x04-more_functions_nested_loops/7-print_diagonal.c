@@ -2,7 +2,6 @@
 /**
  * add_space - print spaces
  * @space: int lines
- * 
  * Return: void 0 (Success)
  */
 void add_space(int space)
@@ -16,7 +15,6 @@ add_space(--space);
 /**
  * print_diagonal - Entry point
  * @n: int
- * 
  * Return: Always 0 (Success)
  */
 void print_diagonal(int n)

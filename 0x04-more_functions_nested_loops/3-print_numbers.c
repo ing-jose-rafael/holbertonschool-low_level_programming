@@ -6,7 +6,7 @@
  */
 void print_numbers(void)
 {
-    char number = '/';
-    while ((number++) < '9')
-        _putchar(number);
+char number = '/';
+while ((number++) < '9')
+_putchar(number);
 }

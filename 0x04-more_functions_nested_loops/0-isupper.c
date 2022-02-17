@@ -1,6 +1,5 @@
 /**
  * _isupper - function that checks for uppercase character.
- *
  * @c: int char
  *
  * Return: 1 (is uppercase) else 1

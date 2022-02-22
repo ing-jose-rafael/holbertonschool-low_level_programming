@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * puts_half - function that prints a string, in reverse,
 *             followed by a new line

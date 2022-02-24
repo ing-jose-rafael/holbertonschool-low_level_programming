@@ -1,26 +1,40 @@
 /**
-* cap_string - Capitalizes all words of a string..
-* @s: The pointer.
-*
-* Return: To the value of s.
-*/
+ * cap_string - Capitalizes all words of a string..
+ * @s: The pointer.
+ *
+ * Return: To the value of s.
+ */
 char *cap_string(char *s)
 {
-int j;
-for (j = 0; s[j] != '\0'; j++)
-{
-if (j == 0 && s[j] >= 'a' && s[j] <= 'z')
-{
-s[j] -= 32;
-}
-if ((s[j] == ' ' || s[j] == ',' || s[j] == ';' ||
-	s[j] == '.' || s[j] == '!' || s[j] == '?' ||
-	s[j] == '"' || s[j] == '(' || s[j] == ')' ||
-	s[j] == '{' || s[j] == '}' || s[j] == '\n' ||
-	s[j] == '\t') && (s[j + 1] >= 'a' && s[j + 1] <= 'z'))
-{
-s[j + 1] -= 32;
-}
-}
-return (s);
+	int i;
+
+	i = 0;
+	if (s[0] >= 'a' && s[0] <= 'z')
+	{
+		s[0] = s[0] - 32;
+	}
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		switch (s[i])
+		{
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+			case ' ':
+			case '\n':
+			case '\t':
+				if (s[i + 1] >= 96 && s[i + 1] <= 123)
+				{
+					s[i + 1] -= 32;
+				}
+		}
+	}
+	return (s);
 }

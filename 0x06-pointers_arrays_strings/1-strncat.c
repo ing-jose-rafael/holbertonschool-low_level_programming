@@ -1,5 +1,5 @@
 /**
- * _strncat - Conc 2 str with n bytes
+ * *_strncat - Conc 2 str with n bytes
  * @dest: Input string 1
  * @src: Input string 2
  * @n: Number of bytes

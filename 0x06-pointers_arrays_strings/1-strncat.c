@@ -12,10 +12,10 @@ int i;
 int len = 0;
 
 while (*(dest+len)!='\0')
-    len++;
+len++;
 for (i = 0; i < n && src[i]; i++)
 {
-    dest[len + i] = src[i];
+dest[len + i] = src[i];
 }
 dest[len + i] = '\0';
 return (dest);
